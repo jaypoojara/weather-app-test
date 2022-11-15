@@ -1,12 +1,10 @@
 import './App.css';
-import HomePage from './pages/HomePage';
 import './styles/index.css'
+import RootRouter from './routers';
 
 function App() {
   return (
-    <>
-      <HomePage />
-    </>
+    <RootRouter />
   );
 }
 

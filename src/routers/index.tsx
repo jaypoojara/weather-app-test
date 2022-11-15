@@ -1,12 +1,13 @@
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "../pages/HomePage";
 import { Page } from "./types";
 
-export const pages: Page[] = [{ path: "/", component: HomePage }];
+export const pages: Page[] = [{ path: "/", component: <HomePage /> }];
 
-const Routes = () => {
+const RootRouter = () => {
   return (
-    <BrowserRouter basename="/">
+    <BrowserRouter>
+      <Routes>
         {pages.map(({ component, path }) => {
           return (
             <Route
@@ -16,8 +17,9 @@ const Routes = () => {
              />
           );
         })}
+      </Routes>
     </BrowserRouter>
   );
 };
 
-export default Routes;
+export default RootRouter;
