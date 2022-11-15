@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap");
+.weather-app {
+  padding: 8px 30px;
+}
+.search-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.search-section input {
+  width: 400px;
+}
+.align-text-center {
+  text-align: center;
+}
+.weather-detail1,
+.weather-detail2 {
+  margin: 20px 0;
+}
+.weather-detail1 {
+  display: flex;
+  justify-content: center;
+}
+.wheater-box-shadow{
+  -webkit-box-shadow: 0px 0px 35px -15px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 35px -15px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 35px -15px rgba(0,0,0,0.75);
+}
+.weather-detail-section{
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  width: 80%;
+}
+.weather-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.weather-img img {
+  height: 100px;
+  width: 100px;
+}
+.weather-temp-section {
+  display: flex;
+  justify-content: center;
+}
+.weather-temp {
+  font-size: 62px !important;
+  margin-bottom: 0px !important;
+}
+.weather-decs-section,
+.weather-date-section {
+  margin: 10px 0;
+}
+.weather-name-country{
+  color: #8b8987;
+}
+.weather-decs-section{
+  color: #8b8987;
+}
+.weather-date-section {
+  color: #a1a1a1;
+}
+.highlightItem {
+  height: 100px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+}
+.highlight-item-box {
+  display: flex;
+  justify-content: center;
+}
+.highlightItem .title {
+  color: #a1a1a1;
+  margin-bottom: 10px;
+}
+.wind-detail,
+.sun-time {
+  display: flex;
+}
+
+.MuiInputLabel-shrink, .MuiOutlinedInput-notchedOutline{
+  display: none !important;
+}
+
+.MuiOutlinedInput-root{
+  background-color: #fff;
+  border-radius: 20px !important;
+}
+
+.err-msg{
+  background-color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+  color: red;
+  font-size: 22px;
+  font-weight: 600;
+}
