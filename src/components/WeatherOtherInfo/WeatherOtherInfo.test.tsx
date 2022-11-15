@@ -12,7 +12,7 @@ describe("WeatherOtherInfo", () => {
     expect(WeatherOtherInfoComp).toBeDefined();
   });
 
-  it("WeatherOtherInfo speed", async () => {
+  it("should be display wind speed on WeatherOtherInfo", async () => {
     const { container } = render(
       <WeatherOtherInfo currentWeather={mockedWeatherData} />
     );
@@ -20,7 +20,7 @@ describe("WeatherOtherInfo", () => {
     expect(container).toHaveTextContent(`${mockedWeatherData.wind.speed}`);
   });
 
-  it("WeatherOtherInfo humidity", async () => {
+  it("should be display humidity on WeatherOtherInfo", async () => {
     const { container } = render(
       <WeatherOtherInfo currentWeather={mockedWeatherData} />
     );
@@ -28,7 +28,7 @@ describe("WeatherOtherInfo", () => {
     expect(container).toHaveTextContent(`${mockedWeatherData.main.humidity}`);
   });
 
-  it("WeatherOtherInfo visibility", async () => {
+  it("should be display visibility on WeatherOtherInfo", async () => {
     const { container } = render(
       <WeatherOtherInfo currentWeather={mockedWeatherData} />
     );
@@ -36,7 +36,7 @@ describe("WeatherOtherInfo", () => {
     expect(container).toHaveTextContent(`${mockedWeatherData.visibility}`);
   });
 
-  it("WeatherOtherInfo pressure", async () => {
+  it("should be display pressure on WeatherOtherInfo", async () => {
     const { container } = render(
       <WeatherOtherInfo currentWeather={mockedWeatherData} />
     );

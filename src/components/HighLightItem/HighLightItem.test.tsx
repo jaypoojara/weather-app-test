@@ -13,7 +13,7 @@ describe("HighLightItem", () => {
     expect(highlightItemComp).toBeDefined();
   });
 
-  it("HighLightItem title Lable", async () => {
+  it("should be display heading title on HighLightItem", async () => {
     const children = <></>;
     const title = "test title here"
     render(<HighLightItem  children={children} title={title} />)

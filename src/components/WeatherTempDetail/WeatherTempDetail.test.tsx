@@ -13,7 +13,7 @@ describe("WeatherTempDetail", () => {
     expect(WeatherTempDetailComp).toBeDefined();
   });
 
-  it("WeatherTempDetail temp", async () => {
+  it("should be display temprature on WeatherTempDetail", async () => {
     const { container } = render(
       <WeatherTempDetail currentWeather={mockedWeatherData} />
     );
@@ -21,7 +21,7 @@ describe("WeatherTempDetail", () => {
     expect(container).toHaveTextContent(`${mockedWeatherData.main.temp}`);
   });
 
-  it("WeatherTempDetail description", async () => {
+  it("should be display weather discription on WeatherTempDetail", async () => {
     const { container } = render(
       <WeatherTempDetail currentWeather={mockedWeatherData} />
     );
@@ -31,7 +31,7 @@ describe("WeatherTempDetail", () => {
     );
   });
 
-  it("WeatherTempDetail name and country", async () => {
+  it("should be display name and their country on WeatherTempDetail", async () => {
     const { container } = render(
       <WeatherTempDetail currentWeather={mockedWeatherData} />
     );
@@ -40,7 +40,7 @@ describe("WeatherTempDetail", () => {
     expect(container).toHaveTextContent(mockedWeatherData.sys.country);
   });
 
-  it("WeatherTempDetail name and country", async () => {
+  it("should be display month name from date", async () => {
     const { container } = render(
       <WeatherTempDetail currentWeather={mockedWeatherData} />
     );

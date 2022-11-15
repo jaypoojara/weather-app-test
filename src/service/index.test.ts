@@ -48,7 +48,7 @@ export const mockedWeatherData = {
 };
 describe("Service", () => {
   
-  it("getWeatherDetailByCity", async() => {
+  it("should be call getWeatherDetailByCity", async() => {
     axios.get = jest.fn().mockReturnValue({ data: mockedWeatherData});
     const res = await getWeatherDetailByCity("Chicago")
     expect(axios.get).toBeCalled()

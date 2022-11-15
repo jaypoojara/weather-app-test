@@ -21,7 +21,7 @@ describe("SearchBar", () => {
     expect(SearchBarComp).toBeDefined();
   });
 
-  it("SearchBar temp", async () => {
+  it("Should be call search input event", async () => {
     const city = "";
     const setCity = jest.fn();
     const fetchWeatherDetail = jest.fn();

@@ -15,7 +15,7 @@ describe("HomePage", () => {
     expect(HomePageComp).toBeDefined();
   });
 
-  it("HomePage component", async () => {
+  it("should be render searchable input data on HomePage", async () => {
     render(<Provider store={store}><HomePage /></Provider>);
 
     const SearchBarComp = screen.getByTestId(`search-bar-search-input`);
