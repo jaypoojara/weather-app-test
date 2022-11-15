@@ -28,7 +28,7 @@ export const showDay = (value: number) => {
   if (value === 1) {
     return "Monday";
   } else if (value === 2) {
-    return "TuesDay";
+    return "Tuesday";
   } else if (value === 3) {
     return "Wednesday";
   } else if (value === 4) {
